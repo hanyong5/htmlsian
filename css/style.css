@@ -55,18 +55,35 @@
 
 
 #main_banner{
-	background:#eeeeee;
+	background:#eeeeee;color:white;
 }
 #banner{
 	width: 980px;margin:0 auto;
-	
+
 }
 #banner>ul{width:100%;overflow:hidden;}
-#banner>ul>li{width:20%;float:left;height:200px;cursor:pointer;}
+#banner>ul>li{width:20%;float:left;height:200px;cursor:pointer;text-align:center;}
 #banner>ul>li:nth-child(1){background:#7C99B9;}
 #banner>ul>li:nth-child(1):hover{background:skyblue;}
 
-.card{width:100%;}
-.card img{display:block;margin:0 auto;margin-top:15px;}
-.card-body{padding:20px;color:white;text-align:center;}
+.card{width:100%;padding-top:15px;}
+.card img{display:block;margin:0 auto;}
+.card-body{padding:20px;}
 .card-title{margin-bottom:5px;}
+.card-text{_margin-bottom:5px;}
+
+#main_article{width:980px;margin:0 auto;color:black;}
+#main_article >ul{overflow:hidden;}
+#main_article >ul>li{float:left;width:310px;margin-right:25px;}
+#main_article >ul>li:last-child{float:right;margin-right:0px;}
+#main_article .card-body{border: 1px solid #ddd;border-top:none;}
+#main_article .card-text{
+	white-space:nowrap;overflow: hidden;text-overflow:ellipsis;
+}
+
+
+#bottom_article{width:980px;margin:0 auto;color:black;}
+#bottom_article >ul{overflow:hidden;}
+#bottom_article >ul>li{float:left;width:310px;margin-right:25px;}
+#bottom_article >ul>li:last-child{float:right;margin-right:0px;}
+#bottom_article .card-body{border: 1px solid #ddd;}
