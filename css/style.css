@@ -55,35 +55,36 @@
 
 
 #main_banner{
-	background:#eeeeee;color:white;
+	background:#eeeeee;
+	color:white;
 }
-#banner{
-	width: 980px;margin:0 auto;
+#banner{width:980px;margin:0 auto;background:#ddd;}
 
+#banner>ul{width:100%;}
+#banner>ul>li{float:left;width:20%;height:200px;text-align:center;
+	cursor:pointer;
 }
-#banner>ul{width:100%;overflow:hidden;}
-#banner>ul>li{width:20%;float:left;height:200px;cursor:pointer;text-align:center;}
-#banner>ul>li:nth-child(1){background:#7C99B9;}
-#banner>ul>li:nth-child(1):hover{background:skyblue;}
+#banner>ul>li:nth-child(1){background-color:#7c99b9}
+#banner>ul>li:nth-child(1):hover{background-color:skyblue}
 
 .card{width:100%;padding-top:15px;}
 .card img{display:block;margin:0 auto;}
 .card-body{padding:20px;}
 .card-title{margin-bottom:5px;}
-.card-text{_margin-bottom:5px;}
+.card-text{}
 
-#main_article{width:980px;margin:0 auto;color:black;}
-#main_article >ul{overflow:hidden;}
-#main_article >ul>li{float:left;width:310px;margin-right:25px;}
-#main_article >ul>li:last-child{float:right;margin-right:0px;}
-#main_article .card-body{border: 1px solid #ddd;border-top:none;}
-#main_article .card-text{
-	white-space:nowrap;overflow: hidden;text-overflow:ellipsis;
-}
+#main_article{width:980px;margin:0 auto;_background:blue;}
+#main_article>ul{width:100%;}
+#main_article>ul>li{float:left;width:310px;cursor:pointer;margin-right:25px;}
+#main_article .card-body{border: 1px solid #ddd;border-top:none;_background:red;}
+#main_article>ul>li:last-child{margin-right:0;float:right;}
+#main_article .card-text{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 
-
-#bottom_article{width:980px;margin:0 auto;color:black;}
-#bottom_article >ul{overflow:hidden;}
-#bottom_article >ul>li{float:left;width:310px;margin-right:25px;}
-#bottom_article >ul>li:last-child{float:right;margin-right:0px;}
-#bottom_article .card-body{border: 1px solid #ddd;}
+#bottom_article{width:980px;margin:0 auto;_background:blue;}
+#bottom_article>ul{width:100%;}
+#bottom_article>ul>li{float:left;width:310px;cursor:pointer;margin-right:25px;overflow:hidden;}
+#bottom_article .card {position:relative}
+#bottom_article .card .img{position: absolute;top:30px;left:125px;}
+#bottom_article .card-body{border: 1px solid #ddd;height:180px;position: relative;}
+#bottom_article>ul>li:last-child{margin-right:0;float:right;}
+#bottom_article .card-text{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
